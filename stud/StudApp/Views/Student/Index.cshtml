@@ -1,0 +1,20 @@
+@using BOL;
+@{
+    ViewData["Title"] = "Student List";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Employess</h1>
+    @{
+        List<Student> allstudents=(List<Student>)ViewData["students"];
+            <ol>
+                @foreach (Student stud in allstudents)
+                {
+                    <li><a href="/student/details/@stud.Id">@stud.Name</a></li>
+                    @* <li><a href="/student/details/@stud.Id">@stud.Email</a></li> *@
+                    
+                }
+            </ol>
+        
+    }
+</div>

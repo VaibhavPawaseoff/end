@@ -1,0 +1,126 @@
+Neet Click karne*********
+
+
+
+
+
+
+
+
+1.cmd in main folder
+
+2.dotnet new sln                      //solution file libraries link
+
+3.open mysql
+
+4.create database DotNet
+
+5.Use DotNet
+
+6.Create table Topic(topicID int primary key,topicName varchar(20),topicFaculty varchar(20),topicDesc varchar(20));
+
+7.insert into topic values(1,"Java","Raveena","Easy");
+insert into topic values(2,".Net","Ravina","Difficult");
+insert into topic values(3,"JavaScript","Rohit","Medium");
+insert into topic values(4,"CSS","Mr.T","Easy");
+
+8.dotnet new mvc -o TopicApp
+
+9.dotnet new classlib -o BOL
+
+10.dotnet new classlib -o BLL
+
+11.dotnet new classlib -o DAL
+
+12.dotnet sln add TopicApp\TopicApp.csproj
+
+13.dotnet sln add BOL\BOL.csproj
+
+14.dotnet sln add BLL\BLL.csproj
+
+15.dotnet sln add DAL\DAL.csproj
+
+16.Code . in cmd
+
+17.Rename class1.cs in BOL Name of the table (Topic)
+
+18.
+
+namespace BOL;
+public class Topic
+{
+    public int TopicID{get;set;}
+    public string? TopicName{get;set;} 
+    public string? TopicFaculty{get;set;}
+    public string? TopicDesc{get;set;}
+}
+
+
+19.Rename class1.cs in DAL ,Rename to DBManager.cs
+
+
+
+20.Change Class name to DBManager,Change necesarry variables
+
+21.In DAL Folder
+
+22.Open Terminal
+
+23.cd DAL
+
+24.dotnet add reference ..\BOL\BOL.csproj
+
+25.In DAL  copy
+
+<PackageReference Include="mysql.data" Version="8.0.31" />
+
+26.OPEN BLL,Make Necesarry changes
+
+27.
+
+28.EmployeeAPP>Views
+
+29.Make Folder for App>Create CShtml File>Login file
+
+30.managerment\EmpApp\Controllers
+
+Make new controller >topic Controller
+
+31.index in views folder make changes
+
+32.Open Terminal.Change directroy to EmpApp,
+
+33.dotnet run
+
+14.local host link copy paste or follow
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

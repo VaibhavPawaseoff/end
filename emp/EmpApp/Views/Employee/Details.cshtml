@@ -1,0 +1,24 @@
+@using BOL;
+@{
+    ViewData["Title"] = "Employee List";
+}
+<div class="text-center">
+    <h1 class="display-4">Employess</h1>
+    @{
+       Employee emp =(Employee)ViewData["employee"];
+       <table style="border: 2px solid black ; padding: 2px;">
+        <tr style="border: 2px solid black; padding: 2px;">
+            <td style="border: 2px solid black;">ID</td>
+            <td style="border: 2px solid black;">Name</td>
+            <td style="border: 2px solid black;">Email</td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black;">@emp.Id</td>
+            <td style="border: 2px solid black;">@emp.Name</td>
+            <td style="border: 2px solid black;">@emp.Email</td>
+        </tr>
+       </table>
+          
+        
+    }
+</div>
